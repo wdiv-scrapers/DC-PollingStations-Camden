@@ -6,7 +6,7 @@ districts_url = "https://opendata.camden.gov.uk/api/geospatial/p2bh-u5fm?method=
 council_id = 'E09000007'
 
 
-stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations')
+stations_scraper = HashOnlyScraper(stations_url, council_id, 'stations', 'xml')
 stations_scraper.scrape()
-districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts')
+districts_scraper = HashOnlyScraper(districts_url, council_id, 'districts', 'kml')
 districts_scraper.scrape()
